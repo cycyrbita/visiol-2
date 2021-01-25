@@ -38,6 +38,12 @@
         }
     }
 
+    &_vision {
+        background-image: url("../media/section/vision.jpg");
+        background-position: center center;
+        background-size: auto 100%;
+    }
+
     &_commits {
         padding-top: 0;
     }
