@@ -1,0 +1,49 @@
+
+.demo__title {
+    margin-top: 50px;
+    font-family: "HeadingPro", sans-serif;
+    font-size: 280px;
+    font-weight: 700;
+    color: #19b85c;
+    text-align: center;
+    text-transform: uppercase;
+    filter: blur(10px);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: blur(0);
+    }
+
+    30% {
+        filter: blur(20px);
+    }
+
+    60% {
+        filter: blur(0);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}
+
+@media (max-width: 1310px) {
+    .demo__title {
+        font-size: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .demo__title {
+        margin-top: 0;
+        font-size: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .demo__title {
+        font-size: 75px;
+    }
+}
