@@ -44,6 +44,12 @@
         background-size: auto 100%;
     }
 
+    &_help {
+        background-image: url("../media/section/help.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
+
     &_commits {
         padding-top: 0;
     }
