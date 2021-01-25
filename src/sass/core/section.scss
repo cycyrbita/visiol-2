@@ -11,48 +11,6 @@
         background-size: cover;
     }
 
-    &_causes {
-        background-image: url("../media/section/causes.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    &_factors {
-        background-image: url("../media/section/factors.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    &_statistics {
-        padding-bottom: 0;
-        background-image: url("../media/section/statistics.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    &_symptoms {
-        padding-top: 216px;
-        padding-bottom: 0;
-    }
-
-    &_key {
-        background-image: url("../media/section/key.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    &_sostav {
-        background-image: url("../media/section/sostav.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
-    &_professional {
-        background-image: url("../media/section/professional.jpg");
-        background-position: center;
-        background-size: cover;
-    }
-
     &_commits {
         padding-top: 0;
     }
@@ -71,66 +29,12 @@
 }
 
 @media (max-width: 1310px) {
-    .section {
-        padding-top: 60px;
-        padding-bottom: 60px;
-
-        &_face {
-            padding-top: 20px;
-        }
-
-        &_causes {
-            background-image: url("../media/section/causes-1310.jpg");
-        }
-
-        &_statistics {
-            background-image: url("../media/section/statistics-1310.jpg");
-        }
-
-        &_key {
-            padding-top: 0;
-        }
-
-        &_commits {
-            padding-top: 0;
-        }
-
-        &_footer {
-            padding-top: 40px;
-            padding-bottom: 20px;
-        }
-    }
-
     .section__title {
         font-size: 44px;
     }
 }
 
 @media (max-width: 768px) {
-    .section {
-        padding-top: 40px;
-        padding-bottom: 40px;
-
-        &_causes {
-            padding-top: 0;
-            padding-bottom: 230px;
-            background-image: url("../media/section/causes-480.jpg");
-        }
-
-        &_key {
-            padding-top: 0;
-        }
-
-        &_commits {
-            padding-top: 0;
-        }
-
-        &_footer {
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-    }
-
     .section__title {
         font-size: 38px;
     }
