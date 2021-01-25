@@ -1,0 +1,51 @@
+
+.answer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.answer__body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #16d9a2;
+
+    & span {
+        padding: 20px 15px 15px 15px;
+        font-family: "HeadingPro", sans-serif;
+        font-size: 51px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 1310px) {
+    .answer__body {
+        & span {
+            font-size: 32px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .answer__body {
+        & span {
+            font-size: 26px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .answer__body {
+        & span {
+            font-size: 22px;
+        }
+    }
+}
