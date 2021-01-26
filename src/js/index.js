@@ -12,6 +12,10 @@ $(document).ready(function () {
         }
     })
 
+    $('.study__line-after').css('width', function() {
+        return $(this).parent('.study__line').children().children('span').text() + '%';
+    })
+
     Start();
 
     function Start() {

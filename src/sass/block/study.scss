@@ -1,0 +1,102 @@
+.study {
+    max-width: 850px;
+}
+
+.study__title {
+    margin-bottom: 30px;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.study__description {
+    max-width: 570px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.study__graph {
+    max-width: 640px;
+}
+
+.study__graph-item {
+    & + & {
+        margin-top: 20px;
+    }
+
+    & > span {
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-left: 35px;
+        font-family: "HeadingPro", sans-serif;
+        font-size: 21px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &:nth-child(1) {
+        & .study__line-after {
+            background-color: rgb(118, 13, 174);
+            background-image: linear-gradient(100deg, rgba(118, 13, 174, 1) 0%, rgba(220, 17, 117, 1) 100%);
+        }
+    }
+
+    &:nth-child(2) {
+        & .study__line-after {
+            background-color: rgb(74, 48, 197);
+            background-image: linear-gradient(100deg, rgba(74, 48, 197, 1) 0%, rgba(21, 215, 245, 1) 100%);
+        }
+    }
+
+    &:nth-child(3) {
+        & .study__line-after {
+            background-color: rgb(43, 49, 195);
+            background-image: linear-gradient(100deg, rgba(43, 49, 195, 1) 0%, rgba(219, 28, 59, 1) 100%);
+        }
+    }
+
+    &:nth-child(4) {
+        & .study__line-after {
+            background-color: rgb(2, 135, 205);
+            background-image: linear-gradient(100deg, rgba(2, 135, 205, 1) 0%, rgba(10, 234, 209, 1) 100%);
+        }
+    }
+}
+
+.study__line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px 35px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 2px solid #ededed;
+    border-radius: 50px;
+
+    & p {
+        position: relative;
+        z-index: 2;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+
+.study__line-after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    content: '';
+    border-radius: 0 50px 50px 0;
+}
+
+@media (max-width: 480px) {
+    .study__description {
+        font-size: 18px;
+    }
+
+    .study__graph-item > span {
+        margin-left: 0;
+        font-size: 16px;
+    }
+}
