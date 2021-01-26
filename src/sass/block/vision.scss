@@ -64,12 +64,18 @@
 
 @media (max-width: 480px) {
     .vision__media {
-        min-height: 300px;
+        min-height: 234px;
+        background-image: url("../media/vision/oculus-480.jpg");
+    }
+
+    .vision {
+        border: 0;
     }
 
     .vision__title {
         margin-bottom: 15px;
-        font-size: 26px;
+        font-size: 28px;
+        text-transform: uppercase;
     }
 
     .vision__info {

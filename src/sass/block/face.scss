@@ -99,6 +99,10 @@
     }
 }
 
+.face__list-descriptionMobile {
+    display: none;
+}
+
 .face__product {
     position: absolute;
     bottom: -160px;
@@ -242,48 +246,92 @@
 
 @media (max-width: 480px) {
     .face__item {
-        padding-left: 50px;
+        padding-left: 70px;
         font-size: 14px;
 
         &::before {
             left: 10px;
-            width: 28px;
-            height: 28px;
+            width: 47px;
+            height: 47px;
         }
     }
 
     .face__list {
-        width: 60%;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
     }
 
     .face__product {
-        width: 33%;
+        width: 100%;
+        max-width: 200px;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-left: auto;
 
         &::before {
-            display: none;
+            width: 320px;
+            background-image: url("../media/product-before-mobile.png");
         }
-    }
 
-    .face__title {
-        font-size: 70px;
-
-        & span {
-            font-size: 60px;
+        &::after {
+            top: 48px;
+            display: block;
+            width: 320px;
+            background-image: url("../media/product-after-mobile.png");
         }
-    }
-}
-
-@media (max-width: 370px) {
-    .face__item {
-        font-size: 14px;
-    }
-
-    .face__item-media {
-        width: 45px;
-        min-width: 45px;
     }
 
     .face__item-txt {
-        font-size: 14px;
+        font-size: 22px;
+    }
+
+    .face__title {
+        font-size: 114px;
+        text-align: center;
+
+        & span {
+            font-size: 80px;
+        }
+
+        & mark {
+            font-size: 37px;
+            letter-spacing: 15px;
+        }
+    }
+
+    .face__list-description {
+        display: none;
+    }
+
+    .face__list-descriptionMobile {
+        display: block;
+
+        & span {
+            font-size: 20px;
+        }
+    }
+
+    .face__box-footer {
+        margin-bottom: 0 !important;
+    }
+
+    .face__box:last-child {
+        margin-bottom: -315px;
     }
 }
+
+// @media (max-width: 370px) {
+//     .face__item {
+//         font-size: 14px;
+//     }
+
+//     .face__item-media {
+//         width: 45px;
+//         min-width: 45px;
+//     }
+
+//     .face__item-txt {
+//         font-size: 14px;
+//     }
+// }

@@ -97,27 +97,20 @@
 
 @media (max-width: 480px) {
     .causes__body {
-        margin-right: -15px;
-        margin-left: -15px;
+        margin-right: -10px;
+        margin-left: -10px;
     }
 
-    .causes__card {
-        height: 200px;
-
-        & span {
-            font-size: 18px;
-        }
-    }
-}
-
-@media (max-width: 370px) {
     .causes__card {
         flex: 0 0 100%;
         width: 100%;
-        height: 240px;
+        height: 300px;
+        padding: 35px;
 
         & span {
-            font-size: 20px;
+            display: inline-block;
+            max-width: 185px;
+            font-size: 26px;
         }
 
         &:nth-child(7) {
@@ -129,5 +122,11 @@
             flex: 0 0 100%;
             width: 100%;
         }
+    }
+
+    .causes__title {
+        margin-bottom: 20px;
+        font-size: 41px;
+        text-align: center;
     }
 }

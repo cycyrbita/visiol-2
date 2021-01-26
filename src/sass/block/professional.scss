@@ -117,25 +117,28 @@
     }
 
     .professional__human {
-        right: -15px;
-        bottom: -30px;
-        max-width: 130px;
+        bottom: 100%;
+        left: 50%;
+        max-width: 230px;
+        margin-bottom: -388px;
+        transform: translateX(-50%);
     }
 
     .professional__name {
-        padding-right: 95px;
-        font-size: 16px;
+        padding-right: 0;
+        font-size: 17px;
 
         & mark {
+            display: block;
             font-size: 14px;
         }
     }
 
     .professional__info p {
-        font-size: 18px;
+        font-size: 16px;
 
         &:nth-child(3) {
-            font-size: 18px;
+            font-size: 20px;
         }
     }
 
@@ -144,6 +147,12 @@
     }
 
     .professional__body {
-        padding-bottom: 80px;
+        padding-bottom: 20px;
+    }
+
+    .professional__title {
+        margin-bottom: 310px;
+        font-size: 39px;
+        text-align: center;
     }
 }

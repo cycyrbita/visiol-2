@@ -38,9 +38,11 @@
 @media (max-width: 480px) {
     .event__title {
         margin-bottom: 20px;
+        font-size: 51px;
     }
 
     .event__item {
-        font-size: 18px;
+        min-height: 30px;
+        font-size: 14px;
     }
 }

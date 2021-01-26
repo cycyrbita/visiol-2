@@ -194,12 +194,47 @@
 
 @media (max-width: 480px) {
     .form {
-        padding: 20px 15px;
+        padding: 40px;
+    }
+
+    .form__field {
+        height: 44px;
     }
 
     .form__title {
         margin-bottom: 15px;
         font-size: 28px;
         line-height: 1;
+    }
+
+    .form__label span {
+        top: -2px;
+        font-size: 14px;
+        text-transform: none;
+    }
+
+    .form__time-count {
+        background-color: #001e4f;
+        border: 2px solid #3ea58d;
+
+        & span {
+            &:first-child {
+                font-family: "HeadingPro", sans-serif;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 57px;
+                color: #fff;
+            }
+
+            &:last-child {
+                font-size: 12px;
+                text-transform: none;
+            }
+        }
+    }
+
+    .form__time-title {
+        font-size: 12px;
+        text-transform: none;
     }
 }

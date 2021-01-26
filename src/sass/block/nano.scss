@@ -122,7 +122,7 @@
 
 @media (max-width: 768px) {
     .nano {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .nano__media {
@@ -141,5 +141,60 @@
     .nano__info {
         flex: 0 0 100%;
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nano__title {
+        font-size: 54px;
+    }
+
+    .nano__info {
+        text-align: center;
+    }
+
+    .nano__description {
+        text-align: left;
+
+        & p {
+            font-size: 18px;
+            text-align: left;
+
+            & small {
+                font-size: 15px;
+            }
+
+            & mark {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .nano__media {
+        margin-bottom: 0;
+    }
+
+    .nano__btn {
+        margin-bottom: 30px;
+    }
+
+    .nano__product {
+        width: 100%;
+        max-width: 200px;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-left: auto;
+
+        &::before {
+            width: 320px;
+            background-image: url("../media/product-before-mobile.png");
+        }
+
+        &::after {
+            top: 48px;
+            display: block;
+            width: 320px;
+            background-image: url("../media/product-after-mobile.png");
+        }
     }
 }

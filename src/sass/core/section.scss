@@ -149,17 +149,57 @@
         padding-top: 30px;
         padding-bottom: 30px;
 
+        &_face {
+            background-image: url("../media/section/face-480.jpg");
+        }
+
         &_demo {
-            padding-bottom: 170px;
+            padding-top: 330px;
+            padding-bottom: 100px;
+            background-image: url("../media/section/demo-480.jpg");
         }
 
         &_help {
-            padding-bottom: 80px;
+            padding-top: 225px;
+            padding-bottom: 130px;
+            background-image: url("../media/section/help-480.jpg");
+            background-position: center top;
         }
 
         &_footer {
             padding-top: 20px !important;
             padding-bottom: 20px !important;
         }
+
+        &_nano {
+            padding-bottom: 60px;
+            background-image: url("../media/section/nano-480.jpg");
+        }
+
+        &_vision {
+            background-image: url("../media/section/vision-480.jpg");
+            background-position: center top;
+            background-size: auto auto;
+        }
+
+        &_study {
+            padding-top: 220px;
+            background-image: url("../media/section/study-480.jpg");
+            background-position: center top;
+        }
+
+        &_event {
+            padding-top: 280px;
+            background-image: url("../media/section/event-480.jpg");
+            background-position: center top;
+        }
+    }
+
+    .section_glase::before {
+        top: auto;
+        bottom: 0;
+        height: 260px;
+        background-image: url("../media/section/demo-glase.png");
+        background-size: cover;
     }
 }
