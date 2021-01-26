@@ -16,6 +16,11 @@ $(document).ready(function () {
         return $(this).parent('.study__line').children().children('span').text() + '%';
     })
 
+    $('.nano__btn').on('click', function(e){
+        $('html,body').stop().animate({ scrollTop: $('.js-section_face').offset().top }, 1000);
+        e.preventDefault();
+    });
+
     Start();
 
     function Start() {

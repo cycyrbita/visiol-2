@@ -1,9 +1,22 @@
 footer {
+    font-family: "HeadingPro", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
     color: #000;
     text-align: center;
     background-color: #fff;
 
     & a {
         color: #000;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 24px;
+
+        & a {
+            color: #000;
+        }
     }
 }

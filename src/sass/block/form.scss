@@ -162,7 +162,7 @@
 
 .form__btn {
     width: 100%;
-    padding: 20px 15px;
+    padding: 20px 15px 15px;
     font-family: "HeadingPro", sans-serif;
     font-size: 22px;
     font-weight: 700;
@@ -173,6 +173,10 @@
     background-image: linear-gradient(97deg, rgba(41, 148, 193, 1) 0%, rgba(22, 218, 162, 1) 100%);
     border: 0;
     border-radius: 30px;
+
+    &:hover {
+        transform: scale(.98);
+    }
 }
 
 @media (max-width: 1310px) {

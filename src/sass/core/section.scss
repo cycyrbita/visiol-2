@@ -83,7 +83,7 @@
     }
 
     &_footer {
-        padding-top: 40px !important;
+        padding-top: 160px !important;
         padding-bottom: 40px !important;
     }
 }
@@ -112,6 +112,11 @@
 
         &_help {
             padding-bottom: 130px;
+        }
+
+        &_footer {
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
         }
     }
 }
