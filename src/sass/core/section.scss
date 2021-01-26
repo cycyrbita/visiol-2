@@ -79,12 +79,12 @@
     }
 
     &_commits {
-        padding-top: 0;
+        background-color: #5693c5;
     }
 
     &_footer {
-        padding-top: 80px;
-        padding-bottom: 40px;
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
     }
 }
 
@@ -150,6 +150,11 @@
 
         &_help {
             padding-bottom: 80px;
+        }
+
+        &_footer {
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
         }
     }
 }
