@@ -1,0 +1,153 @@
+
+.professional {
+    position: relative;
+}
+
+.professional__title {
+    max-width: 640px;
+    margin-bottom: 30px;
+}
+
+.professional__body {
+    padding: 40px;
+    background-color: #eaedf5;
+    background-image: url("../media/professional/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+}
+
+.professional__info {
+    max-width: 560px;
+
+    & p {
+        font-size: 19px;
+
+        & + p {
+            margin-top: 20px;
+        }
+
+        &:nth-child(3) {
+            font-size: 24px;
+            color: #2b428e;
+        }
+    }
+}
+
+.professional__footer {
+    padding: 20px 40px;
+}
+
+.professional__name {
+    font-size: 24px;
+    font-style: italic;
+    color: #2b428e;
+
+    & mark {
+        font-size: 16px;
+        font-style: normal;
+        color: inherit;
+    }
+}
+
+.professional__human {
+    position: absolute;
+    right: -65px;
+    bottom: -120px;
+}
+
+@media (max-width: 1310px) {
+    .professional__body {
+        background-position: left center;
+    }
+
+    .professional__footer {
+        max-width: 475px;
+    }
+
+    .professional__name {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .professional__job {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .professional__human {
+        right: -195px;
+        bottom: -80px;
+        max-width: 435px;
+    }
+
+    .professional__info {
+        max-width: 475px;
+
+        & p:nth-child(3) {
+            font-size: 21px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .professional__human {
+        right: -145px;
+        bottom: -60px;
+        max-width: 190px;
+    }
+
+    .professional__body {
+        padding: 15px 15px 30px;
+    }
+
+    .professional__footer {
+        padding: 15px;
+    }
+
+    .professional__name {
+        padding-right: 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .professional__job {
+        max-width: 160px;
+    }
+
+    .professional__id {
+        max-width: 130px;
+    }
+
+    .professional__human {
+        right: -15px;
+        bottom: -30px;
+        max-width: 130px;
+    }
+
+    .professional__name {
+        padding-right: 95px;
+        font-size: 16px;
+
+        & mark {
+            font-size: 14px;
+        }
+    }
+
+    .professional__info p {
+        font-size: 18px;
+
+        &:nth-child(3) {
+            font-size: 18px;
+        }
+    }
+
+    .professional__footer {
+        padding: 20px 0 0 0;
+    }
+
+    .professional__body {
+        padding-bottom: 80px;
+    }
+}
