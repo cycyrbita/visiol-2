@@ -1,0 +1,140 @@
+
+.nano {
+    display: flex;
+}
+
+.nano__media {
+    display: flex;
+    flex: 0 0 50%;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.nano__info {
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.nano__title {
+    margin-bottom: 30px;
+    font-family: "HeadingPro", sans-serif;
+    font-size: 105px;
+    font-weight: 700;
+    color: #45a98b;
+
+    & mark {
+        color: #000;
+    }
+}
+
+.nano__description {
+    margin-bottom: 30px;
+
+    & p {
+        font-size: 24px;
+
+        & small {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        & mark {
+            font-weight: 700;
+        }
+    }
+}
+
+.nano__btn {
+    display: inline-block;
+    padding: 20px 45px 15px 45px;
+    font-family: "HeadingPro", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgb(41, 148, 193);
+    background-image: linear-gradient(97deg, rgba(41, 148, 193, 1) 0%, rgba(22, 218, 162, 1) 100%);
+    border-radius: 30px;
+}
+
+.nano__product {
+    position: relative;
+    z-index: 5;
+
+    &::before {
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        z-index: -1;
+        width: 152%;
+        height: 100%;
+        content: '';
+        background-image: url("../media/product-before.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100% auto;
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        position: absolute;
+        top: 75px;
+        left: 50%;
+        width: 152%;
+        height: 100%;
+        content: '';
+        background-image: url("../media/product-after.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 100% auto;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1310px) {
+    .nano__product {
+        max-width: 260px;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .nano__description {
+        & p {
+            font-size: 20px;
+
+            & small {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .nano {
+        flex-direction: column;
+    }
+
+    .nano__media {
+        flex: 0 0 100%;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 120px;
+    }
+
+    .nano__product {
+        &::after {
+            display: block;
+        }
+    }
+
+    .nano__info {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+}
