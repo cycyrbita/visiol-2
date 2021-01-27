@@ -35,6 +35,7 @@
     font-size: 16px;
     font-weight: 500;
     color: #dadada;
+    text-transform: none;
 
     &::before {
         position: absolute;
@@ -52,7 +53,8 @@
     font-size: 27px;
     font-weight: 600;
     line-height: 19px;
-    color: #fff;
+    color: #22a37c;
+    text-transform: none;
 }
 
 .form__label {
@@ -134,7 +136,8 @@
     box-sizing: content-box;
     width: 68px;
     height: 52px;
-    background-color: #fff;
+    background-color: #001e4f;
+    border: 2px solid #3ea58d;
 }
 
 .form__time-count span {
@@ -142,11 +145,12 @@
 }
 
 .form__time-count span:first-child {
-    font-family: "Montserrat", sans-serif;
-    font-size: 32px;
-    line-height: 53px;
+    font-family: "HeadingPro", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 57px;
+    color: #fff;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .form__time-count span:last-child {
@@ -158,6 +162,7 @@
     font-size: 14px;
     color: #fff;
     text-align: center;
+    text-transform: none;
 }
 
 .form__btn {

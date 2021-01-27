@@ -14,9 +14,10 @@
     }
 
     &_demo {
-        min-height: 970px;
+        min-height: 870px;
+        padding-bottom: 0;
         background-image: url("../media/section/demo.jpg");
-        background-position: center bottom;
+        background-position: center top;
         background-size: cover;
     }
 
@@ -73,6 +74,7 @@
     }
 
     &_professional {
+        padding-bottom: 60px;
         background-image: url("../media/section/professional.jpg");
         background-position: center center;
         background-size: cover;
@@ -107,7 +109,7 @@
 
         &_demo {
             min-height: 0;
-            padding-bottom: 400px;
+            padding-bottom: 280px;
         }
 
         &_help {
@@ -117,6 +119,10 @@
         &_footer {
             padding-top: 40px !important;
             padding-bottom: 40px !important;
+        }
+
+        &_vision {
+            padding-top: 0;
         }
     }
 }
@@ -131,11 +137,15 @@
         padding-bottom: 60px;
 
         &_demo {
-            padding-bottom: 315px;
+            padding-bottom: 175px;
         }
 
         &_help {
             padding-bottom: 110px;
+        }
+
+        &_vision {
+            padding-top: 0;
         }
     }
 }

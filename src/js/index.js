@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
     AOS.init({
-        offset: 30,
+        offset: 15,
         disable: 'mobile'
     });
 
