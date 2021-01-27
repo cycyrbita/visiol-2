@@ -13,10 +13,6 @@
 
 @keyframes animate {
     0% {
-        filter: blur(0);
-    }
-
-    30% {
         filter: blur(10px);
     }
 
@@ -24,8 +20,12 @@
         filter: blur(0);
     }
 
-    100% {
+    90% {
         filter: blur(0);
+    }
+
+    100% {
+        filter: blur(10px);
     }
 }
 

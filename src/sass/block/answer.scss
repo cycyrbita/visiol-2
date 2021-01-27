@@ -1,18 +1,11 @@
 
 .answer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    margin-top: 60px;
+    overflow: hidden;
 }
 
 .answer__body {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     display: flex;
-    justify-content: space-around;
     background-color: #16d9a2;
 
     & span {
@@ -23,6 +16,7 @@
         color: #fff;
         text-transform: uppercase;
         white-space: nowrap;
+        background-color: #16d9a2;
     }
 }
 
@@ -48,5 +42,9 @@
             font-size: 43px;
             text-transform: uppercase;
         }
+    }
+
+    .answer {
+        overflow: auto;
     }
 }
