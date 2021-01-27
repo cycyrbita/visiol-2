@@ -1,7 +1,8 @@
 
 $(document).ready(function () {
     AOS.init({
-        offset: 30
+        offset: 30,
+        disable: 'mobile'
     });
 
     $('.form__field').focus(function () {
