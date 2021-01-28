@@ -1,6 +1,14 @@
 /* stylelint-disable */
 
 @font-face {
+  font-family: 'Animosa';
+  src: url('../fonts/Animosa/Animosa-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Animosa/Animosa-ExtraBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'CodecWarm';
   src: url('../fonts/CodecWarm/CodecWarm-Regular.woff2') format('woff2'),
     url('../fonts/CodecWarm/CodecWarm-Regular.woff') format('woff');

@@ -76,4 +76,22 @@ $(document).ready(function () {
             }
         }
     });
+    if ( $('.js-demoAnimate span').length > 0) {
+        let lengthTitle = $('.js-demoAnimate span').text().trim();
+        addDelayAnimate (lengthTitle);
+        
+    } else {
+        let lengthTitle = $('.js-demoAnimate').text().trim();
+        addDelayAnimate (lengthTitle);
+    }
+
+    function addDelayAnimate (lengthTitle) {
+        let result = '';
+        let j = 0;
+        for (let i = 0; i < lengthTitle.length; i++) {
+            j += 0.1;
+            result += '<span style="animation-delay: ' + j + 's">' + lengthTitle[i] + '</span>';
+            $('.js-demoAnimate').html(result);
+        }
+    }
 });

@@ -1,31 +1,33 @@
 
 .demo__title {
     margin-top: 50px;
-    font-family: "HeadingPro", sans-serif;
-    font-size: 280px;
+    font-family: "Animosa", sans-serif;
+    font-size: 300px;
     font-weight: 700;
     color: #19b85c;
     text-align: center;
     text-transform: uppercase;
-    filter: blur(10px);
-    animation: animate 5s linear infinite;
+
+    & span {
+        animation: animate 3s linear infinite;
+    }
 }
 
 @keyframes animate {
     0% {
-        filter: blur(10px);
-    }
-
-    60% {
         filter: blur(0);
     }
 
-    90% {
+    40% {
+        filter: blur(20px);
+    }
+
+    80% {
         filter: blur(0);
     }
 
     100% {
-        filter: blur(10px);
+        filter: blur(0);
     }
 }
 
