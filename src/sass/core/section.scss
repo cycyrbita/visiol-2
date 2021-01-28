@@ -14,7 +14,7 @@
     }
 
     &_demo {
-        min-height: 980px;
+        min-height: 870px;
         padding-bottom: 0;
         background-image: url("../media/section/demo.jpg");
         background-position: center top;
@@ -75,6 +75,7 @@
 
     &_professional {
         padding-bottom: 60px;
+        overflow: hidden;
         background-image: url("../media/section/professional.jpg");
         background-position: center center;
         background-size: cover;
@@ -127,6 +128,14 @@
     }
 }
 
+@media (max-width: 992px) {
+    .section {
+        &_demo {
+            padding-bottom: 200px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .section__title {
         font-size: 38px;
@@ -137,7 +146,7 @@
         padding-bottom: 60px;
 
         &_demo {
-            padding-bottom: 175px;
+            padding-bottom: 135px;
         }
 
         &_help {
@@ -165,7 +174,7 @@
 
         &_demo {
             padding-top: 330px;
-            padding-bottom: 130px;
+            padding-bottom: 100px;
             background-image: url("../media/section/demo-480.jpg");
         }
 
