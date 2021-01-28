@@ -83,4 +83,10 @@
         font-weight: 900;
         background-color: transparent;
     }
+
+    @supports (-webkit-touch-callout: none) {
+        .help__title span {
+            padding: 15px 5px;
+        }
+    }
 }

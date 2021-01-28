@@ -90,8 +90,8 @@ $(document).ready(function () {
         let j = 0;
         for (let i = 0; i < lengthTitle.length; i++) {
             j += 0.1;
-            result += '<span style="animation-delay: ' + j + 's">' + lengthTitle[i] + '</span>';
-            $('.js-demoAnimate').html(result);
+            result += '<span style="animation-delay: ' + j + 's; -webkit-animation-delay: ' + j + 's;">' + lengthTitle[i] + '</span>';
         }
+        $('.js-demoAnimate').html(result);
     }
 });

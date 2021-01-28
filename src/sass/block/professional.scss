@@ -108,6 +108,11 @@
 }
 
 @media (max-width: 480px) {
+    .professional {
+        display: flex;
+        flex-direction: column;
+    }
+
     .professional__job {
         max-width: 160px;
     }
@@ -117,11 +122,12 @@
     }
 
     .professional__human {
-        bottom: 100%;
-        left: 50%;
-        max-width: 230px;
-        margin-bottom: -388px;
-        transform: translateX(-50%);
+        position: static;
+        order: 2;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        transform: translateX(0);
     }
 
     .professional__name {
@@ -143,15 +149,18 @@
     }
 
     .professional__footer {
+        order: 4;
         padding: 20px 0 0 0;
     }
 
     .professional__body {
+        order: 3;
         padding-bottom: 20px;
     }
 
     .professional__title {
-        margin-bottom: 310px;
+        order: 1;
+        margin-bottom: 0;
         font-size: 39px;
         text-align: center;
     }
